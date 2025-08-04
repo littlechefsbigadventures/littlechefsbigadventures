@@ -141,12 +141,14 @@
     <p>Whimsical recipes & food quests for kids and families</p>
   </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Recipes</a>
-    <a href="#">Adventures</a>
-    <a href="#">Contact</a>
-  </nav>
+<nav>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../recipe-finder.html">Recipe Finder</a></li>
+    <li><a href="../recipes.html">Recipes</a></li>
+    <li><a href="../subscribe.html">Subscribe</a></li>
+  </ul>
+</nav>
 
   <section class="hero">
     <h2>Welcome, Little Chefs!</h2>
