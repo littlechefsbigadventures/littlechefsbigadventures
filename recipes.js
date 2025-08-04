@@ -358,3 +358,11 @@ function findRecipes() {
   // Example: Filter recipes based on texture, flavor, and dislikes
   // Outputs links like <a href="/recipes/mini-pancake-bites.html">Mini Pancake Bites</a>
 }
+{
+  name: "Yogurt Parfait",
+  url: "/recipes/yogurt-parfait.html",
+  texture: "Smooth",
+  flavor: "Sweet",
+  continent: "Breakfast Bays",
+  ingredients: ["yogurt", "granola", "fruit"]
+}
