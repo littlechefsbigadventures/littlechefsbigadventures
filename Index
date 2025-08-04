@@ -141,12 +141,14 @@
     <p>Whimsical recipes & food quests for kids and families</p>
   </header>
 
+<!-- header.html -->
 <nav>
   <ul>
     <li><a href="/index.html">Home</a></li>
-    <li><a href="/about.html">About</a></li>
     <li><a href="/recipes.html">Recipes</a></li>
     <li><a href="/recipe-finder.html">Recipe Finder</a></li>
+    <li><a href="/subscribe.html">Subscribe</a></li>
+    <li><a href="https://www.facebook.com/littlechefsbigadventures">Facebook</a></li>
   </ul>
 </nav>
 
