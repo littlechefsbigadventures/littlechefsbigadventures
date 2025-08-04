@@ -813,7 +813,113 @@
         .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal > div { padding-right: 0px!important; padding-bottom: 10px; }
         .ml-form-formContent.horozintalForm .ml-button-horizontal { width: 100%!important; }
         .ml-form-formContent.horozintalForm .ml-button-horizontal.labelsOn { padding-top: 0px!important; }
+<script>
+  // Recipe Finder JavaScript
+  const recipes = [
+    {
+      name: "Mini Cheese Quesadillas",
+      texture: "crisp",
+      flavor: "mild",
+      ingredients: ["tortilla", "cheese", "butter"],
+      description: "Crispy tortillas filled with gooey melted cheese, perfect for dipping in ketchup or salsa.",
+      link: "/recipes/mini-cheese-quesadillas.html"
+    },
+    {
+      name: "Crispy Chicken Nuggets",
+      texture: "crunchy",
+      flavor: "mild",
+      ingredients: ["chicken", "breadcrumbs", "egg"],
+      description: "Golden, crunchy nuggets that are fun to eat with your favorite sauce.",
+      link: "/recipes/crispy-chicken-nuggets.html"
+    },
+    {
+      name: "Banana Yogurt Smoothie",
+      texture: "smooth",
+      flavor: "sweet",
+      ingredients: ["banana", "yogurt", "milk", "honey"],
+      description: "A creamy, sweet smoothie that’s like a milkshake but healthier!",
+      link: "/recipes/banana-yogurt-smoothie.html"
+    },
+    {
+      name: "Buttery Pasta Stars",
+      texture: "smooth",
+      flavor: "mild",
+      ingredients: ["pasta", "butter", "parmesan"],
+      description: "Tiny star-shaped pasta tossed in butter with a sprinkle of cheese.",
+      link: "/recipes/buttery-pasta-stars.html"
+    },
+    {
+      name: "Apple Slice Smiles",
+      texture: "crisp",
+      flavor: "sweet",
+      ingredients: ["apple", "peanut butter", "raisins"],
+      description: "Crisp apple slices with peanut butter and raisin ‘smiles’ for a fun snack.",
+      link: "/recipes/apple-slice-smiles.html"
+    },
+    {
+      name: "Mini Pancake Bites",
+      texture: "smooth",
+      flavor: "sweet",
+      ingredients: ["flour", "milk", "sugar", "egg"],
+      description: "Bite-sized pancakes you can dip in syrup or eat plain!",
+      link: "/recipes/mini-pancake-bites.html"
+    },
+    {
+      name: "Cheesy Veggie Tots",
+      texture: "crunchy",
+      flavor: "mild",
+      ingredients: ["potato", "cheese", "zucchini", "breadcrumbs"],
+      description: "Crispy tots with hidden veggies and melty cheese, perfect for dipping!",
+      link: "/recipes/cheesy-veggie-tots.html"
+    },
+    {
+      name: "Strawberry Cream Pops",
+      texture: "smooth",
+      flavor: "sweet",
+      ingredients: ["strawberries", "yogurt", "honey"],
+      description: "Creamy, sweet popsicles that feel like a treat but are super healthy!",
+      link: "/recipes/strawberry-cream-pops.html"
+    },
+    {
+      name: "Cucumber Star Snacks",
+      texture: "crisp",
+      flavor: "mild",
+      ingredients: ["cucumber", "cream cheese", "herbs"],
+      description: "Cool cucumber stars topped with creamy cheese for a fun, crisp bite.",
+      link: "/recipes/cucumber-star-snacks.html"
+    }
+  ];
 
+  function generateRecipes() {
+    const textures = Array.from(document.querySelectorAll('input[name="texture"]:checked')).map(input => input.value);
+    const flavors = Array.from(document.querySelectorAll('input[name="flavor"]:checked')).map(input => input.value);
+    const dislikes = document.querySelector('input[name="dislikes"]').value
+      .split(',')
+      .map(item => item.trim().toLowerCase())
+      .filter(item => item !== '');
+
+    let matches = recipes.filter(recipe => {
+      const textureMatch = textures.length === 0 || textures.includes(recipe.texture);
+      const flavorMatch = flavors.length === 0 || flavors.includes(recipe.flavor);
+      const dislikeMatch = !dislikes.some(dislike => recipe.ingredients.includes(dislike));
+      return textureMatch && flavorMatch && dislikeMatch;
+    });
+
+    const resultsDiv = document.getElementById('results');
+    if (matches.length === 0) {
+      resultsDiv.innerHTML = `<p>No recipes match your preferences. Try fewer restrictions or check out our <a href="/recipes.html">full recipe collection</a>!</p>`;
+    } else {
+      let output = "<h3>Your Little Chef Recipes:</h3>";
+      matches.forEach(recipe => {
+        output += `
+          <div class="recipe">${recipe.name}</div>
+          <p class="recipe-description">${recipe.description} <a href="${recipe.link}">View Recipe</a></p>
+        `;
+      });
+      resultsDiv.innerHTML = output;
+    }
+  }
+</script>
       }
     </style>
 
