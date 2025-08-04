@@ -1,32 +1,59 @@
-{
-  name: "Recipe Name",
-  texture: "crunchy|smooth|crisp",
-  flavor: "mild|sweet",
-  ingredients: ["ingredient1", "ingredient2", ...],
-  description: "Short description for picky eaters.",
-  link: "/recipes/recipe-name.html"
-}
-{
-  name: "Cheesy Veggie Tots",
-  texture: "crunchy",
-  flavor: "mild",
-  ingredients: ["potato", "cheese", "zucchini", "breadcrumbs"],
-  description: "Crispy tots with hidden veggies and melty cheese, perfect for dipping!",
-  link: "/recipes/cheesy-veggie-tots.html"
-},
-{
-  name: "Strawberry Cream Pops",
-  texture: "smooth",
-  flavor: "sweet",
-  ingredients: ["strawberries", "yogurt", "honey"],
-  description: "Creamy, sweet popsicles that feel like a treat but are super healthy!",
-  link: "/recipes/strawberry-cream-pops.html"
-},
-{
-  name: "Cucumber Star Snacks",
-  texture: "crisp",
-  flavor: "mild",
-  ingredients: ["cucumber", "cream cheese", "herbs"],
-  description: "Cool cucumber stars topped with creamy cheese for a fun, crisp bite.",
-  link: "/recipes/cucumber-star-snacks.html"
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes - Little Chefs Big Adventures</title>
+  <meta name="description" content="Explore 44 kid-friendly recipes in Nibbletopia’s Breakfast Bays, Lunch Lands, Dinner Dell, and Dessert Dunes at Little Chefs Big Adventures!">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Little Chefs Big Adventures</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipe-finder.html">Recipe Finder</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Nibbletopia Recipes</h2>
+    <h3>Breakfast Bays</h3>
+    <ul>
+      <li><a href="/recipes/banana-yogurt-smoothie">Banana Yogurt Smoothie (Smooth, Sweet)</a></li>
+      <li><a href="/recipes/pumpkin-protein-muffins">Pumpkin Protein Muffins (Soft, Sweet)</a></li>
+      <li><a href="/recipes/bacon-breakfast-muffins">Bacon Breakfast Muffins (Crisp, Mild)</a></li>
+      <!-- Add all 12 -->
+    </ul>
+    <h3>Lunch Lands</h3>
+    <ul>
+      <li><a href="/recipes/cheesy-veggie-tots">Cheesy Veggie Tots (Crunchy, Mild)</a></li>
+      <li><a href="/recipes/chicken-salad-sandwich">Chicken Salad Sandwich (Smooth, Mild)</a></li>
+      <!-- Add all 12 -->
+    </ul>
+    <h3>Dinner Dell</h3>
+    <ul>
+      <li><a href="/recipes/mini-cheese-quesadillas">Mini Cheese Quesadillas (Crisp, Mild)</a></li>
+      <li><a href="/recipes/baked-spaghetti">Baked Spaghetti (Soft, Mild)</a></li>
+      <!-- Add all 12 -->
+    </ul>
+    <h3>Dessert Dunes</h3>
+    <ul>
+      <li><a href="/recipes/strawberry-cream-pops">Strawberry Cream Pops (Smooth, Sweet)</a></li>
+      <li><a href="/recipes/homemade-dunkaroos">Homemade Dunkaroos (Crisp, Sweet)</a></li>
+      <!-- Add all 8 -->
+    </ul>
+  </main>
+  <footer>
+    <p>Join our newsletter for more picky eater tips!</p>
+    <form action="https://static.mailerlite.com/webforms/submit/XXXXX" method="post" target="_blank">
+      <label for="email">Email:</label>
+      <input type="email" name="fields[email]" id="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </footer>
+</body>
+</html>
