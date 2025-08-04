@@ -374,3 +374,11 @@ function findRecipes() {
   continent: "Breakfast Bays",
   ingredients: ["pumpkin puree", "flour", "protein powder"]
 }
+{
+  name: "Yogurt Parfait",
+  url: "/recipes/yogurt-parfait.html",
+  texture: "Smooth",
+  flavor: "Sweet",
+  continent: "Breakfast Bays",
+  ingredients: ["yogurt", "granola", "fruit"]
+}
