@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes - Little Chefs Big Adventures</title>
+  <meta name="description" content="Explore 44 kid-friendly recipes in Nibbletopia’s Breakfast Bays, Lunch Lands, Dinner Dell, and Dessert Dunes at Little Chefs Big Adventures!">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Little Chefs Big Adventures</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipe-finder.html">Recipe Finder</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Nibbletopia Recipes</h2>
+    <h3>Breakfast Bays</h3>
+    <ul>
+      <li><a href="/recipes/banana-yogurt-smoothie">Banana Yogurt Smoothie (Smooth, Sweet)</a></li>
+      <li><a href="/recipes/pumpkin-protein-muffins">Pumpkin Protein Muffins (Soft, Sweet)</a></li>
+      <li><a href="/recipes/bacon-breakfast-muffins">Bacon Breakfast Muffins (Crisp, Mild)</a></li>
+      <li><a href="/recipes/air-fryer-sausage-patties">Air Fryer Sausage Patties (Crisp, Mild)</a></li>
+      <li><a href="/recipes/berry-oatmeal-bowl">Berry Oatmeal Bowl (Smooth, Sweet)</a></li>
+      <li><a href="/recipes/mini-pancake-bites">Mini Pancake Bites (Soft, Sweet)</a></li>
+      <li><a href="/recipes/yogurt-parfait">Yogurt Parfait (Smooth, Sweet)</a></li>
+      <li><a href="/recipes/french-toast-sticks">French Toast Sticks (Crisp, Sweet)</a></li>
+      <li><a href="/recipes/cheesy-egg-muffins">Cheesy Egg Muffins (Soft, Mild)</a></li>
+      <li><a href="/recipes/apple-cinnamon-oatmeal">Apple Cinnamon Oatmeal (Smooth, Sweet)</a></li>
+      <li><a href="/recipes/peanut-butter-toast">Peanut Butter Toast (Crisp, Sweet)</a></li>
+      <li><a href="/recipes/blueberry-waffles">Blueberry Waffles (Crisp, Sweet)</a></li>
+    </ul>
+    <h3>Lunch Lands</h3>
+    <ul>
+      <li><a href="/recipes/cheesy-veggie-tots">Cheesy Veggie Tots (Crunchy, Mild)</a></li>
+      <li><a href="/recipes/chicken-salad-sandwich">Chicken Salad Sandwich (Smooth, Mild)</a></li>
+      <li><a href="/recipes/turkey-roll-ups">Turkey Roll Ups (Soft, Mild)</a></li>
+      <li><a href="/recipes/mini-chicken-burgers">Mini Chicken Burgers (Crisp, Mild)</a></li>
+      <li><a href="/recipes/pesto-chicken-bake">Pesto Chicken Bake (Soft, Mild)</a></li>
+      <li><a href="/recipes/cheeseburger-biscuits">Cheeseburger Biscuits (Crisp, Mild)</a></li>
+      <li><a href="/recipes/veggie-wraps">Veggie Wraps (Soft, Mild)</a></li>
+      <li><a href="/recipes/ham-and-cheese-sliders">Ham and Cheese Sliders (Soft, Mild)</a></li>
+      <li><a href="/recipes/peanut-butter-banana-sandwich">Peanut Butter Banana Sandwich (Smooth, Sweet)</a></li>
+      <li><a href="/recipes/mac-and-cheese-cups">Mac and Cheese Cups (Soft, Mild)</a></li>
+      <li><a href="/recipes/tuna-melt-bites">Tuna Melt Bites (Crisp, Mild)</a></li>
+      <li><a href="/recipes/pizza-roll-ups">Pizza Roll Ups (Crisp, Mild)</a></li>
+    </ul>
+    <h3>Dinner Dell</h3>
+    <ul>
+      <li><a href="/recipes/mini-cheese-quesadillas">Mini Cheese Quesadillas (Crisp, Mild)</a></li>
+      <li><a href="/recipes/baked-spaghetti">Baked Spaghetti (Soft, Mild)</a></li>
+      <li><a href="/recipes/chicken-nuggets">Chicken Nuggets (Crunchy, Mild)</a></li>
+      <li><a href="/recipes/tater-tot-casserole">Tater Tot Casserole (Crisp, Mild)</a></li>
+      <li><a href="/recipes/slow-cooker-chicken-tacos">Slow Cooker Chicken Tacos (Soft, Mild)</a></li>
+      <li><a href="/recipes/cheeseburger-hot-dish">Cheeseburger Hot Dish (Crisp, Mild)</a></li>
+      <li><a href="/recipes/chicken-parmesan-meatballs">Chicken Parmesan Meatballs (Soft, Mild)</a></li>
+      <li><a href="/recipes/ground-beef-noodle-casserole">Ground Beef Noodle Casserole (Soft, Mild)</a></li>
+      <li><a href="/recipes/chicken-alfredo">Chicken Alfredo (Smooth, Mild)</a></li>
+      <li><a href="/recipes/french-bread-pizza">French Bread Pizza (Crisp, Mild)</a></li>
+      <li><a href="/recipes/sesame-chicken-meatballs">Sesame Chicken Meatballs (Soft, Sweet)</a></li>
+      <li><a href="/recipes/chili-dog-casserole">Chili Dog Casserole (Crisp, Mild)</a></li>
+    </ul>
+    <h3>Dessert Dunes</h3>
+    <ul>
+      <li><a href="/recipes/strawberry-cream-pops">Strawberry Cream Pops (Smooth, Sweet)</a></li>
+      <li><a href="/recipes/homemade-dunkaroos">Homemade Dunkaroos (Crisp, Sweet)</a></li>
+      <li><a href="/recipes/rainbow-fruit-skewers">Rainbow Fruit Skewers (Crisp, Sweet)</a></li>
+      <li><a href="/recipes/chocolate-banana-bites">Chocolate Banana Bites (Smooth, Sweet)</a></li>
+      <li><a href="/recipes/peanut-butter-cookies">Peanut Butter Cookies (Crisp, Sweet)</a></li>
+      <li><a href="/recipes/apple-pie-bites">Apple Pie Bites (Crisp, Sweet)</a></li>
+      <li><a href="/recipes/yogurt-fruit-pops">Yogurt Fruit Pops (Smooth, Sweet)</a></li>
+      <li><a href="/recipes/oatmeal-raisin-bars">Oatmeal Raisin Bars (Soft, Sweet)</a></li>
+    </ul>
+  </main>
+  <footer>
+    <p>Join our newsletter for more picky eater tips!</p>
+    <form action="https://static.mailerlite.com/webforms/submit/XXXXX" method="post" target="_blank">
+      <label for="email">Email:</label>
+      <input type="email" name="fields[email]" id="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </footer>
+</body>
+</html>
