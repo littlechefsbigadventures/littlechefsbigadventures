@@ -1,0 +1,51 @@
+/littlechefsbigadventures
+│
+├── index.html            ← homepage
+├── about.html            ← about page
+├── recipes.html          ← recipe library
+├── contact.html          ← contact form
+├── css/
+│   └── style.css         ← all your styling
+├── js/
+│   └── script.js         ← optional for interactivity
+├── images/
+│   └── your images here
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Chefs, Big Adventures</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Little Chefs, Big Adventures</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome, little chefs and amazing parents!</h2>
+      <p>Explore delicious recipes, magical meals, and kitchen adventures for picky eaters and growing foodies alike.</p>
+    </section>
+
+    <section class="featured-recipes">
+      <h2>Featured Recipes</h2>
+      <!-- We can add links and images to top posts here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Little Chefs, Big Adventures. All rights reserved.</p>
+  </footer>
+</body>
+</html>
