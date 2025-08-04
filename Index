@@ -189,7 +189,12 @@
       <a href="#">threads</a>
     </p>
   </footer>
-
+<div id="header"></div>
+<script>
+  fetch('/header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header').innerHTML = data);
+</script>
 </body>
 </html>
 <p><strong>Join the Nibbletopia Adventure!</strong> Subscribe to the Little Chefs Big Adventures newsletter and dive into the magical world of Nibbletopia, where picky eaters turn into fearless food explorers! Get weekly kid-friendly recipes, clever tips for tackling fussy appetites, and exclusive updates from our Picky Eater Recipe Finder, all delivered straight to your inbox. Sign up now at our <a href="/subscribe.html">Subscribe page</a> and start making mealtimes a delicious adventure! 🌟</p>
