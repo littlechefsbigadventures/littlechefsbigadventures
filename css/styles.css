@@ -12,3 +12,24 @@ p a {
 p a:hover {
   text-decoration: underline;
 }
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: #ff9f43;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Comic Sans MS', Arial, sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #d00000;
+}
