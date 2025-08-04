@@ -382,3 +382,11 @@ function findRecipes() {
   continent: "Breakfast Bays",
   ingredients: ["yogurt", "granola", "fruit"]
 }
+{
+  name: "Air Fryer Sausage Patties",
+  url: "/recipes/air-fryer-sausage-patties.html",
+  texture: "Crisp",
+  flavor: "Mild",
+  continent: "Breakfast Bays",
+  ingredients: ["ground sausage", "spices"]
+}
