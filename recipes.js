@@ -366,3 +366,11 @@ function findRecipes() {
   continent: "Breakfast Bays",
   ingredients: ["yogurt", "granola", "fruit"]
 }
+{
+  name: "Pumpkin Protein Muffins",
+  url: "/recipes/pumpkin-protein-muffins.html",
+  texture: "Soft",
+  flavor: "Sweet",
+  continent: "Breakfast Bays",
+  ingredients: ["pumpkin puree", "flour", "protein powder"]
+}
