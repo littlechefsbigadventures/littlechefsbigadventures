@@ -164,10 +164,13 @@
       <h3>🍓 Taste Quests</h3>
       <p>Fun food challenges that turn mealtime into storytime.</p>
     </div>
-    <div class="feature-card">
-      <h3>🥦 Picky Eater Tips</h3>
-      <p>Wholesome meals even choosy kids will nibble up!</p>
-    </div>
+    <a href="picky-eater-tips.html" class="feature-card" style="text-decoration: none; color: inherit;">
+  <div>
+    <h3>🥦 Picky Eater Tips</h3>
+    <p>Wholesome meals even choosy kids will nibble up!</p>
+  </div>
+</a>
+    
   </section>
 
   <section class="newsletter">
