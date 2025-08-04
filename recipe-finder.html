@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find picky eater-friendly recipes with our interactive Recipe Finder at Little Chefs Big Adventures!">
+  <meta name="keywords" content="picky eater recipes, kid-friendly meals, easy recipes">
+  <title>Picky Eater Recipe Finder - Little Chefs Big Adventures</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 15px;
+      background: #fff5e6;
+      color: #333;
+    }
+    .quiz-container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border: 2px solid #ff9f43;
+    }
+    h1 {
+      font-size: 30px;
+      color: #d00000;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p.subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 15px 0;
+      font-size: 16px;
+      color: #333;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+      accent-color: #ff9f43;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 2px solid #ff9f43;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    button {
+      background: #ff9f43;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      display: block;
+      margin: 20px auto;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #f48c06;
+    }
+    #results {
+      margin-top: 25px;
+      padding: 15px;
+      background: #fefae0;
+      border-radius: 8px;
+      border: 1px solid #ff9f43;
+    }
+    .recipe {
+      font-weight: bold;
+      color: #d00000;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .recipe-description {
+      margin: 5px 0 15px;
+      font-size: 14px;
+      color: #555;
+    }
+    a {
+      color: #2a9d8f;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .quiz-container {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      p.subtitle {
+        font-size: 16px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Picky Eater Recipe Finder</h1>
+    <p class="subtitle">Discover yummy recipes for your Little Chef adventure!</p>
+    <form id="foodQuiz">
+      <label><input type="checkbox" name="texture" value="crunchy"> I like crunchy foods (e.g., nuggets, chips)</label>
+      <label><input type="checkbox" name="texture" value="smooth"> I like smooth foods (e.g., yogurt, pudding)</label>
+      <label><input type="checkbox" name="texture" value="crisp"> I like crisp foods (e.g., apples, carrots)</label>
+      <label><input type="checkbox" name="flavor" value="mild"> I like mild flavors (e.g., cheesy, buttery)</label>
+      <label><input type="checkbox" name="flavor" value="sweet"> I like sweet flavors (e.g., fruit, honey)</label>
+      <label>Foods you dislike (separate with commas, e.g., broccoli, fish): 
+        <input type="text" name="dislikes" placeholder="e.g., broccoli, fish">
+      </label>
+      <button type="button" onclick="generateRecipes()">Find My Recipes!</button>
+    </form>
+    <div id="results"></div>
+  </div>
+
+  <script>
+    // Recipe database for picky eaters
+    const recipes = [
+      {
+        name: "Mini Cheese Quesadillas",
+        texture: "crisp",
+        flavor: "mild",
+        ingredients: ["tortilla", "cheese", "butter"],
+        description: "Crispy tortillas filled with gooey melted cheese, perfect for dipping in ketchup or salsa.",
+        link: "/recipes/mini-cheese-quesadillas.html"
+      },
+      {
+        name: "Crispy Chicken Nuggets",
+        texture: "crunchy",
+        flavor: "mild",
+        ingredients: ["chicken", "breadcrumbs", "egg"],
+        description: "Golden, crunchy nuggets that are fun to eat with your favorite sauce.",
+        link: "/recipes/crispy-chicken-nuggets.html"
+      },
+      {
+        name: "Banana Yogurt Smoothie",
+        texture: "smooth",
+        flavor: "sweet",
+        ingredients: ["banana", "yogurt", "milk", "honey"],
+        description: "A creamy, sweet smoothie that’s like a milkshake but healthier!",
+        link: "/recipes/banana-yogurt-smoothie.html"
+      },
+      {
+        name: "Buttery Pasta Stars",
+        texture: "smooth",
+        flavor: "mild",
+        ingredients: ["pasta", "butter", "parmesan"],
+        description: "Tiny star-shaped pasta tossed in butter with a sprinkle of cheese.",
+        link: "/recipes/buttery-pasta-stars.html"
+      },
+      {
+        name: "Apple Slice Smiles",
+        texture: "crisp",
+        flavor: "sweet",
+        ingredients: ["apple", "peanut butter", "raisins"],
+        description: "Crisp apple slices with peanut butter and raisin ‘smiles’ for a fun snack.",
+        link: "/recipes/apple-slice-smiles.html"
+      },
+      {
+        name: "Mini Pancake Bites",
+        texture: "smooth",
+        flavor: "sweet",
+        ingredients: ["flour", "milk", "sugar", "egg"],
+        description: "Bite-sized pancakes you can dip in syrup or eat plain!",
+        link: "/recipes/mini-pancake-bites.html"
+      }
+    ];
+
+    function generateRecipes() {
+      const textures = Array.from(document.querySelectorAll('input[name="texture"]:checked')).map(input => input.value);
+      const flavors = Array.from(document.querySelectorAll('input[name="flavor"]:checked')).map(input => input.value);
+      const dislikes = document.querySelector('input[name="dislikes"]').value
+        .split(',')
+        .map(item => item.trim().toLowerCase())
+        .filter(item => item !== '');
+
+      let matches = recipes.filter(recipe => {
+        const textureMatch = textures.length === 0 || textures.includes(recipe.texture);
+        const flavorMatch = flavors.length === 0 || flavors.includes(recipe.flavor);
+        const dislikeMatch = !dislikes.some(dislike => recipe.ingredients.includes(dislike));
+        return textureMatch && flavorMatch && dislikeMatch;
+      });
+
+      const resultsDiv = document.getElementById('results');
+      if (matches.length === 0) {
+        resultsDiv.innerHTML = `<p>No recipes match your preferences. Try fewer restrictions or check out our <a href="/recipes.html">full recipe collection</a>!</p>`;
+      } else {
+        let output = "<h3>Your Little Chef Recipes:</h3>";
+        matches.forEach(recipe => {
+          output += `
+            <div class="recipe">${recipe.name}</div>
+            <p class="recipe-description">${recipe.description} <a href="${recipe.link}">View Recipe</a></p>
+          `;
+        });
+        resultsDiv.innerHTML = output;
+      }
+    }
+  </script>
+</body>
+</html>
