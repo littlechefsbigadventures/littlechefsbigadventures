@@ -357,7 +357,7 @@ const recipes = [
 function findRecipes() {
   // Example: Filter recipes based on texture, flavor, and dislikes
   // Outputs links like <a href="/recipes/mini-pancake-bites.html">Mini Pancake Bites</a>
-}
+},
 {
   name: "Yogurt Parfait",
   url: "/recipes/yogurt-parfait.html",
@@ -365,7 +365,7 @@ function findRecipes() {
   flavor: "Sweet",
   continent: "Breakfast Bays",
   ingredients: ["yogurt", "granola", "fruit"]
-}
+},
 {
   name: "Pumpkin Protein Muffins",
   url: "/recipes/pumpkin-protein-muffins.html",
@@ -373,7 +373,7 @@ function findRecipes() {
   flavor: "Sweet",
   continent: "Breakfast Bays",
   ingredients: ["pumpkin puree", "flour", "protein powder"]
-}
+},
 {
   name: "Yogurt Parfait",
   url: "/recipes/yogurt-parfait.html",
@@ -381,7 +381,7 @@ function findRecipes() {
   flavor: "Sweet",
   continent: "Breakfast Bays",
   ingredients: ["yogurt", "granola", "fruit"]
-}
+},
 {
   name: "Air Fryer Sausage Patties",
   url: "/recipes/air-fryer-sausage-patties.html",
