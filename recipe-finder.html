@@ -6,6 +6,8 @@
   <meta name="description" content="Find picky eater-friendly recipes with our interactive Recipe Finder at Little Chefs Big Adventures!">
   <meta name="keywords" content="picky eater recipes, kid-friendly meals, easy recipes">
   <title>Picky Eater Recipe Finder - Little Chefs Big Adventures</title>
+  <!-- MailerLite Universal Tracking Snippet -->
+  <script async src="https://static.mailerlite.com/js/w/webforms.min.js?v=XXXXX"></script>
   <style>
     body {
       font-family: 'Comic Sans MS', Arial, sans-serif;
@@ -15,14 +17,15 @@
       background: #fff5e6;
       color: #333;
     }
-    .quiz-container {
+    .quiz-container, .subscribe-container {
       background: #fff;
       padding: 25px;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       border: 2px solid #ff9f43;
+      margin-bottom: 20px;
     }
-    h1 {
+    h1, h2 {
       font-size: 30px;
       color: #d00000;
       text-align: center;
@@ -44,7 +47,7 @@
       margin-right: 10px;
       accent-color: #ff9f43;
     }
-    input[type="text"] {
+    input[type="text"], input[type="email"] {
       width: 100%;
       padding: 10px;
       margin: 8px 0;
@@ -52,7 +55,7 @@
       border-radius: 8px;
       font-size: 14px;
     }
-    button {
+    button, .ml-block-form {
       background: #ff9f43;
       color: white;
       padding: 12px 30px;
@@ -64,7 +67,7 @@
       margin: 20px auto;
       transition: background 0.3s;
     }
-    button:hover {
+    button:hover, .ml-block-form:hover {
       background: #f48c06;
     }
     #results {
@@ -91,18 +94,19 @@
     }
     a:hover {
       text-decoration: underline;
+      color: #d00000;
     }
     @media (max-width: 600px) {
-      .quiz-container {
+      .quiz-container, .subscribe-container {
         padding: 15px;
       }
-      h1 {
+      h1, h2 {
         font-size: 24px;
       }
       p.subtitle {
         font-size: 16px;
       }
-      button {
+      button, .ml-block-form {
         padding: 10px 20px;
         font-size: 16px;
       }
@@ -110,6 +114,7 @@
   </style>
 </head>
 <body>
+  <div id="header"></div>
   <div class="quiz-container">
     <h1>Picky Eater Recipe Finder</h1>
     <p class="subtitle">Discover yummy recipes for your Little Chef adventure!</p>
@@ -127,8 +132,21 @@
     <div id="results"></div>
   </div>
 
+  <!-- MailerLite Subscription Form -->
+  <div class="subscribe-container" id="subscribe">
+    <h2>Join Our Little Chefs Newsletter!</h2>
+    <p class="subtitle">Get yummy recipes and picky eater tips every week!</p>
+    <form action="https://static.mailerlite.com/webforms/submit/XXXXX" method="post" target="_blank">
+      <label for="email">Email Address:</label>
+      <input type="email" name="fields[email]" id="email" placeholder="Enter your email" required>
+      <input type="hidden" name="ml-submit" value="1">
+      <button type="submit" class="ml-block-form">Subscribe</button>
+    </form>
+  </div>
+  <div id="footer"></div>
+
   <script>
-    // Recipe database for picky eaters
+    // Recipe Finder JavaScript
     const recipes = [
       {
         name: "Mini Cheese Quesadillas",
@@ -210,17 +228,7 @@
       }
     }
   </script>
+  <script src="/js/header.js"></script>
+  <script src="/js/footer.js"></script>
 </body>
-  <div id="header"></div>
-<script>
-  fetch('/header.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('header').innerHTML = data);
-</script>
-  <div id="footer"></div>
-<script>
-  fetch('/footer.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('footer').innerHTML = data);
-</script>
 </html>
