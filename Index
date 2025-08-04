@@ -145,9 +145,9 @@
 <nav>
   <ul>
     <li><a href="/index.html">Home</a></li>
-    <li><a href="/recipes.html">Recipes</a></li>
-    <li><a href="/recipe-finder.html">Recipe Finder</a></li>
-    <li><a href="/subscribe.html">Subscribe</a></li>
+    <li><a href="littlechefsbigadventures.com/recipes.html">Recipes</a></li>
+    <li><a href="littlechefsbigadventures.com/recipe-finder.html">Recipe Finder</a></li>
+    <li><a href="littlechefsbigadventures.com/subscribe.html">Subscribe</a></li>
     <li><a href="https://www.facebook.com/littlechefsbigadventures">Facebook</a></li>
   </ul>
 </nav>
@@ -186,8 +186,7 @@
     <p>
 <a href="https://www.facebook.com/littlechefsbigadventures">Facebook</a>
      <a href="https://www.instagram.com/littlechefsbigadventures/" target="_blank">Instagram</a>
-      <a href="#">threads</a>
-    </p>
+       </p>
   </footer>
 <div id="header"></div>
 <script>
