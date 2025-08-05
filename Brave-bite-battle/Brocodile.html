@@ -35,6 +35,65 @@
     .buttons {
       margin: 20px;
     }
+    button {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 16px;
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3cb371;
+    }
+  </style>
+</head>
+<body>
+  <h1>Brave Bite Battle: Brocodile</h1>
+  <img src="https://via.placeholder.com/200?text=Brocodile" class="monster-img" alt="Brocodile">
+  <div class="hp-bar">
+    <div class="hp-fill" id="hp-fill"></div>
+  </div>
+  <div class="buttons">
+    <button onclick="attack()">Bite!</button>
+    <button onclick="superBite()">Super Bite!</button>
+  </div>
+
+  <script>
+    let hp = 100; // Initial HP
+    const hpFill = document.getElementById('hp-fill');
+
+    function attack() {
+      hp -= 10; // Regular bite reduces 10 HP
+      if (hp < 0) hp = 0;
+      updateHP();
+      checkGameOver();
+    }
+
+    function superBite() {
+      hp -= 25; // Super bite reduces 25 HP
+      if (hp < 0) hp = 0;
+      updateHP();
+      checkGameOver();
+    }
+
+    function updateHP() {
+      hpFill.style.width = `${hp}%`; // Update HP bar width
+    }
+
+    function checkGameOver() {
+      if (hp <= 0) {
+        alert('Brocodile defeated! Great job!');
+        hp = 100; // Reset HP
+        updateHP();
+      }
+    }
+  </script>
+</body>
+</html>    }
     .buttons button {
       font-size: 1.2rem;
       margin: 10px;
