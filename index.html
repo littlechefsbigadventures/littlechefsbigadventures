@@ -1,0 +1,522 @@
+### File Structure
+- `index.html`: Main homepage with all sections.
+- `recipe.html`: Sample recipe page.
+- `styles.css`: Styling for the website.
+- `script.js`: JavaScript for interactivity (e.g., sticky navigation, animations).
+
+---
+
+### `index.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Little Chefs Big Adventures - Fun, family-friendly recipes for kids and families!">
+    <title>Little Chefs Big Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Little Chefs Big Adventures</h1>
+            <!-- Logo Placeholder: A colorful whisk and chef hat in a circle -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#follow">Follow Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Cooking Up Fun for Kids & Families!</h2>
+            <p>Join the adventure and discover delicious recipes!</p>
+            <a href="#recipes" class="cta-button">Explore Recipes</a>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="section">
+        <h2>Our Recipes</h2>
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="https://via.placeholder.com/300x200?text=Rainbow+Pancakes" alt="Rainbow Pancakes">
+                <h3>Rainbow Pancakes</h3>
+                <p>Colorful pancakes that kids will love to make and eat!</p>
+                <a href="recipe.html" class="recipe-button">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="https://via.placeholder.com/300x200?text=Cheesy+Quesadillas" alt="Cheesy Quesadillas">
+                <h3>Cheesy Quesadillas</h3>
+                <p>Quick and easy cheesy goodness for snack time!</p>
+                <a href="#" class="recipe-button">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="https://via.placeholder.com/300x200?text=Fruit+Salad" alt="Fruit Salad">
+                <h3>Fruit Salad</h3>
+                <p>A healthy and fun mix of fruits for all ages!</p>
+                <a href="#" class="recipe-button">View Recipe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Collection Section -->
+    <section id="collections" class="section">
+        <h2>Recipe Collections</h2>
+        <div class="collection-grid">
+            <div class="collection-card">
+                <img src="https://via.placeholder.com/200x150?text=Breakfast+Bonanza" alt="Breakfast Bonanza">
+                <h3>Breakfast Bonanza</h3>
+                <p>Start the day with fun and tasty breakfast ideas!</p>
+            </div>
+            <div class="collection-card">
+                <img src="https://via.placeholder.com/200x150?text=Sweet+Treats" alt="Sweet Treats">
+                <h3>Sweet Treats</h3>
+                <p>Delicious desserts that kids can help make!</p>
+            </div>
+            <div class="collection-card">
+                <img src="https://via.placeholder.com/200x150?text=Healthy+Bites" alt="Healthy Bites">
+                <h3>Healthy Bites</h3>
+                <p>Nutritious snacks for growing chefs!</p>
+            </div>
+        </div>
+        <a href="#" class="cta-button">See All Collections</a>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section">
+        <h2>Our Mission</h2>
+        <div class="mission-content">
+            <img src="https://via.placeholder.com/400x300?text=Kids+Cooking" alt="Kids cooking together">
+            <div class="mission-text">
+                <p>Empowering kids to explore cooking, creativity, and confidence through fun, family-friendly recipes.</p>
+                <p>At Little Chefs Big Adventures, we believe cooking is a joyful way to learn and grow. Our recipes are designed to spark creativity and bring families together in the kitchen!</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Additional Feature) -->
+    <section id="testimonials" class="section">
+        <h2>What Families Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"My kids love making the Rainbow Pancakes! It's so fun and easy!"</p>
+                <p class="author">- Sarah, Mom of Two</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Little Chefs Big Adventures made cooking a family activity we all enjoy!"</p>
+                <p class="author">- Mike, Dad of Three</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Follow Me Section -->
+    <section id="follow" class="section">
+        <h2>Follow Us</h2>
+        <p>Join our community for updates, tips, and fun recipes!</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Follow on Instagram"><img src="https://via.placeholder.com/40?text=IG" alt="Instagram"></a>
+            <a href="#" aria-label="Follow on YouTube"><img src="https://via.placeholder.com/40?text=YT" alt="YouTube"></a>
+            <a href="#" aria-label="Follow on Pinterest"><img src="https://via.placeholder.com/40?text=Pin" alt="Pinterest"></a>
+        </div>
+        <form class="newsletter-form">
+            <h3>Subscribe to Our Newsletter</h3>
+            <input type="text" placeholder="Your Name" aria-label="Name" required>
+            <input type="email" placeholder="Your Email" aria-label="Email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: info@littlechefsbigadventures.com</p>
+        <p>&copy; 2025 Little Chefs Big Adventures. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </footer>
+</body>
+</html>
+```
+
+---
+
+### `recipe.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Pancakes - Little Chefs Big Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Little Chefs Big Adventures</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#recipes" class="active">Recipes</a></li>
+            <li><a href="index.html#mission">Mission</a></li>
+            <li><a href="index.html#follow">Follow Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Recipe Content -->
+    <section class="section recipe-page">
+        <h2>Rainbow Pancakes</h2>
+        <img src="https://via.placeholder.com/600x400?text=Rainbow+Pancakes" alt="Rainbow Pancakes">
+        <h3>Ingredients</h3>
+        <ul>
+            <li>1 cup all-purpose flour</li>
+            <li>1 tbsp sugar</li>
+            <li>1 tsp baking powder</li>
+            <li>1 cup milk</li>
+            <li>1 egg</li>
+            <li>Food coloring (red, blue, yellow)</li>
+        </ul>
+        <h3>Instructions</h3>
+        <ol>
+            <li>Mix flour, sugar, and baking powder in a bowl.</li>
+            <li>Whisk in milk and egg until smooth.</li>
+            <li>Divide batter into three bowls and add food coloring to each.</li>
+            <li>Cook pancakes on a greased skillet over medium heat.</li>
+            <li>Stack and serve with syrup or fruit!</li>
+        </ol>
+        <a href="index.html#recipes" class="cta-button">Back to Recipes</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: info@littlechefsbigadventures.com</p>
+        <p>&copy; 2025 Little Chefs Big Adventures. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </footer>
+</body>
+</html>
+```
+
+---
+
+### `styles.css`
+```css
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+body {
+    background: url('https://via.placeholder.com/1920x1080?text=Cheerful+Kitchen') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent overlay */
+    background-blend-mode: lighten;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    background: #ffcc00;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #d32f2f;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #d32f2f;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: #d32f2f;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background: #2196f3;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #1976d2;
+    transform: scale(1.05);
+}
+
+/* Section Styles */
+.section {
+    padding: 3rem 2rem;
+    margin: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in;
+}
+
+.section h2 {
+    text-align: center;
+    color: #d32f2f;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* Recipe Grid */
+.recipe-grid, .collection-grid, .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.recipe-card, .collection-card, .testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover, .collection-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img, .collection-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.recipe-button {
+    display: inline-block;
+    background: #ff5722;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.recipe-button:hover {
+    background: #e64a19;
+}
+
+/* Mission Section */
+.mission-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.mission-content img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.mission-text p {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .mission-content {
+        flex-direction: column;
+    }
+    .mission-content img {
+        max-width: 100%;
+    }
+}
+
+/* Testimonials Section */
+.testimonial-card {
+    padding: 1.5rem;
+    font-style: italic;
+}
+
+.testimonial-card .author {
+    font-weight: bold;
+    color: #d32f2f;
+    margin-top: 1rem;
+}
+
+/* Follow Me Section */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.newsletter-form {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.newsletter-form input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.newsletter-form button {
+    background: #2196f3;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #1976d2;
+}
+
+/* Footer */
+footer {
+    background: #ffcc00;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #d32f2f;
+}
+
+/* Recipe Page */
+.recipe-page img {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.recipe-page ul, .recipe-page ol {
+    margin: 1rem 2rem;
+}
+
+.recipe-page h3 {
+    color: #d32f2f;
+    margin: 1rem 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+}
+```
+
+---
+
+### `script.js`
+```javascript
+// Sticky Navigation Highlight
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.section, .hero');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    let currentSection = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(currentSection)) {
+            link.classList.add('active');
+        }
+    });
+});
+
+// Newsletter Form (Frontend-only, no backend)
+document.querySelector('.newsletter-form')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thank you for signing up! Stay tuned for delicious updates!');
+    e.target.reset();
+});
+```
