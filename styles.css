@@ -5,24 +5,19 @@
   font-family: 'Comic Sans MS', 'Arial', sans-serif;
 }
 
-
 body {
   background: url('https://raw.githubusercontent.com/littlechefsbigadventures/littlechefsbigadventures/main/ChatGPT%20Image%20Aug%207%2C%202025%2C%2009_26_05%20AM.png') no-repeat center center fixed;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.3); /* soft dark overlay */
+  background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: darken;
-  color: #fff; /* Switch to white text if needed */
+  color: #fff;
+  line-height: 1.6;
 }
 
-
-
-
-/* Add all your styles here */
 html {
   scroll-behavior: smooth;
 }
+
 section {
-  scroll-margin-top: 120px; /* pushes section down after nav scroll */
+  scroll-margin-top: 120px;
 }
-
-
