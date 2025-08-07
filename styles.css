@@ -307,3 +307,77 @@ footer a:hover {
   border: none;
   display: block;
 }
+/* Recipe Hero */
+.recipe-hero {
+  background: rgba(255,255,255,0.8);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.recipe-hero h1 {
+  font-size: 2.5rem;
+  color: #d32f2f;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Info Bar */
+.recipe-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info-block {
+  background: rgba(255,255,255,0.7);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Sections */
+section.ingredients,
+section.instructions,
+section.why-it-works,
+section.tips {
+  background: rgba(255,255,255,0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.ingredients h2,
+.instructions h2,
+.why-it-works h2,
+.tips h2 {
+  color: #d32f2f;
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Tips List */
+section.tips ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid #ff9800;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .recipe-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
