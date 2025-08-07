@@ -1,12 +1,12 @@
-// Sticky Navigation Highlight
+// Active link highlight on scroll
 window.addEventListener('scroll', () => {
-  const sections = document.querySelectorAll('.section, .hero');
+  const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
 
   let currentSection = '';
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    if (pageYOffset >= sectionTop) {
+    const sectionTop = section.offsetTop - 200; // adjust for header height
+    if (scrollY >= sectionTop) {
       currentSection = section.getAttribute('id');
     }
   });
@@ -17,11 +17,4 @@ window.addEventListener('scroll', () => {
       link.classList.add('active');
     }
   });
-});
-
-// Newsletter popup
-document.querySelector('.newsletter-form')?.addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('Thank you for signing up! Stay tuned for delicious updates!');
-  e.target.reset();
 });
