@@ -8,11 +8,10 @@
 body {
   background: url('https://raw.githubusercontent.com/littlechefsbigadventures/littlechefsbigadventures/main/map.png') no-repeat center center fixed;
   background-size: cover;
-  background-color: rgba(255, 255, 255, 0.8);
-  background-blend-mode: lighten;
   color: #333;
   line-height: 1.6;
 }
+
 
 
 
