@@ -1,11 +1,11 @@
-// 🔹 Highlight current nav link on scroll
+// Sticky Navigation Highlight
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('.section, .hero');
-  const navLinks = document.querySelectorAll('nav a');
+  const navLinks = document.querySelectorAll('.nav-links a');
 
   let currentSection = '';
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 150;
+    const sectionTop = section.offsetTop - 100;
     if (pageYOffset >= sectionTop) {
       currentSection = section.getAttribute('id');
     }
@@ -13,15 +13,15 @@ window.addEventListener('scroll', () => {
 
   navLinks.forEach(link => {
     link.classList.remove('active');
-    if (currentSection && link.getAttribute('href').includes(currentSection)) {
+    if (link.getAttribute('href').includes(currentSection)) {
       link.classList.add('active');
     }
   });
 });
 
-// 🔹 Newsletter form frontend feedback (no backend yet)
-document.querySelector('form')?.addEventListener('submit', (e) => {
+// Newsletter popup
+document.querySelector('.newsletter-form')?.addEventListener('submit', (e) => {
   e.preventDefault();
-  alert('🎉 Thank you for signing up! Stay tuned for delicious updates!');
+  alert('Thank you for signing up! Stay tuned for delicious updates!');
   e.target.reset();
 });
