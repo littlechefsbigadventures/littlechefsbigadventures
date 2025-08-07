@@ -1,35 +1,17 @@
-p {
-  font-family: 'Comic Sans MS', Arial, sans-serif;
-  font-size: 16px;
-  color: #333;
-  text-align: center;
-  margin: 20px 0;
-}
-p a {
-  color: #2a9d8f;
-  text-decoration: none;
-}
-p a:hover {
-  text-decoration: underline;
-}
-nav ul {
-  list-style: none;
+* {
+  margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  background: #ff9f43;
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
 }
-nav ul li {
-  margin: 0 20px;
+
+body {
+  background: url('https://via.placeholder.com/1920x1080?text=Cheerful+Kitchen') no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  color: #333;
+  line-height: 1.6;
 }
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-family: 'Comic Sans MS', Arial, sans-serif;
-  font-size: 18px;
-  padding: 10px;
-  transition: color 0.3s;
-}
-nav ul li a:hover {
-  color: #d00000;
-}
+
+/* Add all your styles here */
