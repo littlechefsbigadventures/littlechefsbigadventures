@@ -15,4 +15,7 @@ body {
 }
 
 /* Add all your styles here */
+html {
+  scroll-behavior: smooth;
+}
 
